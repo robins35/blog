@@ -1,0 +1,20 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<ul class="nav">
+				<li <% if active == 'Home' %>class="active"<% end %>>
+					<%= link_to 'Home', root_path %>
+				</li>
+				<li <% if active == 'Articles' %>class="active"<% end %>>
+					<%= link_to 'Articles', articles_path %>
+				</li>
+				<li<% if active == 'About' %>class="active"<% end %>>
+					<a href="#">About</a>
+				</li>
+				<li<% if active == 'Contact' %>class="active"<% end %>>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

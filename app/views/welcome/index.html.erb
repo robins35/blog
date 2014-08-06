@@ -1,2 +1,16 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+<%= render partial: 'shared/navbar', :locals => { :active => 'Home' } %>
+
+<div class="hero-unit">
+	<h1>It's a generic blog!</h1>
+	<p>I am just making a very generic blog to checkout rails. Click "Articles" in the navigation bar or 'Start Blogging!' below to see some articles and comment! Username: dhh Password: secret</p>
+	<%= link_to 'Start Blogging!', articles_path, :class => 'btn btn-large btn-success' %>
+</div>
+
+<div class="row">
+	<div class="span4">
+		<p>Dummy Text</p>
+	</div>
+	<div class="span8">
+		<p>Dummy Text</p>
+	</div>
+</div>

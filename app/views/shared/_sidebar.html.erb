@@ -1,0 +1,26 @@
+<ul class="nav nav-list">
+	<li class="nav-header">What we are?</li>
+	<li <% if active == 'Home' %>class="active"<% end %>>
+		<%= link_to 'Home', root_path %>
+	</li>
+	<li <% if active == 'Articles' %>class="active"<% end %>>
+		<%= link_to 'Articles', articles_path %>
+	</li>
+	<li<% if active == 'About' %>class="active"<% end %>>
+		<a href="#">About</a>
+	</li>
+	<li<% if active == 'Contact' %>class="active"<% end %>>
+		<a href="#">Contact</a>
+	</li>
+
+	<li class="nav-header">Our favorite sites</li>
+	<li>
+		<a href="http://www.reddit.com" target="_blank">Reddit</a>
+	</li>
+	<li>
+		<a href="http://www.stackoverflow.com" target="_blank">Stackoverflow</a>
+	</li>
+	<li>
+		<a href="http://www.github.com" target="_blank">Github</a>
+	</li>
+</ul>
