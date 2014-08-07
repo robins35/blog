@@ -1,11 +1,9 @@
 <p>
-	<strong>Title:</strong>
-	<%= @article.title %>
+	<div class="page-header"><h1><%= @article.title %></h1></div>
 </p>
 
 <p>
-	<strong>Text:</strong>
-	<%= @article.text %>
+<%= simple_format @article.text %>
 </p>
 
 <h2>Comments</h2>
