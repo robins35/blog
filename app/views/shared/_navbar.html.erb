@@ -2,16 +2,16 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
-				<li <% if active == 'Home' %>class="active"<% end %>>
+				<li <% if current_page?(root_path) %>class="active"<% end %>>
 					<%= link_to 'Home', root_path %>
 				</li>
-				<li <% if active == 'Articles' %>class="active"<% end %>>
+				<li <% if current_page?(controller: 'articles') %>class="active"<% end %>>
 					<%= link_to 'Articles', articles_path %>
 				</li>
-				<li<% if active == 'About' %>class="active"<% end %>>
+				<li>
 					<a href="#">About</a>
 				</li>
-				<li<% if active == 'Contact' %>class="active"<% end %>>
+				<li>
 					<a href="#">Contact</a>
 				</li>
 			</ul>
